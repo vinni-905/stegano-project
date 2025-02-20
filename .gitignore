@@ -1,0 +1,20 @@
+echo # Ignore Python compiled files > .gitignore
+echo __pycache__/ >> .gitignore
+echo *.pyc >> .gitignore
+echo *.pyo >> .gitignore
+
+echo # Ignore logs and temporary files >> .gitignore
+echo *.log >> .gitignore
+echo *.tmp >> .gitignore
+echo *.bak >> .gitignore
+
+echo # Ignore test images (optional) >> .gitignore
+echo test_images/ >> .gitignore
+echo *.jpg >> .gitignore
+echo *.png >> .gitignore
+
+echo # Ignore VS Code settings >> .gitignore
+echo .vscode/ >> .gitignore
+
+echo # Ignore MacOS system files >> .gitignore
+echo .DS_Store >> .gitignore
