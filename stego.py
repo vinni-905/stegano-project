@@ -89,3 +89,22 @@ def extract_message(image_path, password):
             print("❌ Error: Incorrect password or corrupted message!")
     else:
         print("❌ No hidden message found.")
+
+if __name__ == "__main__":
+    print("🔹 Secure Image Steganography Tool 🔹")
+    choice = input("Choose operation - Encode (e) / Decode (d): ").strip().lower()
+
+    if choice == "e":
+        image_path = input("Enter image file path: ").strip()
+        secret_message = input("Enter secret message: ").strip()
+        password = input("Enter a password: ").strip()
+        output_path = "encoded_image.png"  # Default output file
+        hide_message(image_path, secret_message, password, output_path)
+
+    elif choice == "d":
+        image_path = input("Enter encoded image file path: ").strip()
+        password = input("Enter the password for decryption: ").strip()
+        extract_message(image_path, password)
+
+    else:
+        print("❌ Invalid choice! Please enter 'e' for encode or 'd' for decode.")
