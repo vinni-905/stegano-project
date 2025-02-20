@@ -1,0 +1,3 @@
+Decoded message: "I love my dad"
+Encoding method: LSB (Least Significant Bit)
+Date of encoding: 18th Feb 2025
